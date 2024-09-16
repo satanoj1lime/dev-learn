@@ -1,132 +1,43 @@
 // -*- mode: jsonc -*-
 {
-    "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
-    //"height": 30, // Waybar height (to be removed for auto height)
-    "width": 1366, // Waybar width
-    "spacing": 2, // Gaps between modules (4px)
+// waybar general configuration
+   "layer": "top",
+   "position": "bottom",
+   
+// setting the modules order
+   "modules-left": [],
 
-// Choose the order of the modules
-
-    "modules-left": [
+   "modules-center": ["hyprland/window"],
+   
+   "modules-right": [
+        "tray",
         "hyprland/workspaces",
-        "hyprland/window"
-    ],
-
-    "modules-center": [
+        "wireplumber",
+        "battery",
         "clock"
     ],
 
-    "modules-right": [
-        "custom/power",
-        "tray",
-        "network",
-        "custom/swaync",
-        "backlight",
-        "pulseaudio",
-        "cpu",
-        "memory",
-        "battery"
-    ],
-
-// Modules Configuration
-
-    "custom/swaync" : {
-      "format": "󰂚",
-      "on-click":  "~/.config/swaync/swaync.sh",
-      "on-click-right": "swaync-client -C",
-      "tooltip": false
+// modules configuration
+   "battery": {
+       "format": "{icon}  {capacity}%",
+       "format-icons": ["", "", "", "", ""]
    },
 
-    "tray": {
-        // "icon-size": 21,
+   "clock": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%a, %d. %b  %r}"
+   },
+
+   "tray": {
+        "icon-size": 21,
         "spacing": 10
-    },
+},
 
-    "clock": {
-        "format": "{:%I:%M %p} 󰥔",
-        "tooltip-format": "{calendar}", // <big>{:%Y %B}</big>\n
-        "format-alt": "{:%d of %b %Y} 󰸗",
-        "calendar": {
-           "on-scroll": 1,
-              "format": {
-                         "months":     "<span color='#ffead3'><b>{}</b></span>",
-                         "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-                         "weeks":      "{%OW}<span color='#99ffdd'><b>W{}</b></span>",
-                         "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-                         "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
-              }
-        },
-                 "actions":  {
-                    "on-click-middle": "shift_reset",
-                    "on-scroll-up": "shift_down",
-                    "on-scroll-down": "shift_up"
-                 }
-    },
-
-    "cpu": {
-        "format": " {usage}%",
-        "tooltip": false
-    },
-
-    "memory": {
-        "format": " {percentage}%"
-    },
-
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "tooltip-format": "Left click to save brightness.",
-	    "on-click": "~/.config/hypr/waybar/scripts/save_brightness.sh", // To configure path
-	    "on-click-right": "~/.config/hypr/waybar/scripts/load_brightness.sh" // To configure path
-    },
-
-    "battery": {
-        "states": {
-            "good": 85,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon}{capacity}%",
-        "format-charging": "󰂄 {capacity}%",
-        "format-plugged": "󰚥 {capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        "format-full": "󰁹",
-        "format-icons": ["󰁺", "󰁼", "󰁿", "󰂁", "󰂂"]
-
-    },
-
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "󰖩",
-        "format-ethernet": "󰈀",
-        "format-linked": "{ifname} (No IP) 󰴚",
-        "format-disconnected": "Disconnected 󰌙",
-        // "format-alt": "{ifname}: {ipaddr}/{cidr}"
-        "tooltip-format": "{essid} ip {ipaddr} gateway {gwaddr}"
-    },
-
-    "pulseaudio": {
-        "scroll-step": 5, // %, can be a float
-        //"tooltip-format": "{volume}%",
-        "format": "{icon} {volume}%",
-        "format-bluetooth": "{volume}% {icon}󰂱 {format_source}",
-        "format-bluetooth-muted": "{icon}󰗿 {format_source}",
-        "format-muted": "󰓄 {format_source}",
-        "format-source": "󰍬",
-        "format-source-muted": "󰍭",
-        "format-icons": {
-            "headphone": "󰋋",
-            "hands-free": "",
-            "headset": "󰋎",
-            "phone": " ",
-            "portable": " ",
-            "car": " ",
-            "default": ["󰓃"]
-        },
-        "on-click": "pavucontrol"
+   "wireplumber": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "",
+        //"on-click": "helvum",
+        "format-icons": ["", "", ""]
     }
-}
 
+}
