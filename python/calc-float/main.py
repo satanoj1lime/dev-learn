@@ -1,4 +1,4 @@
-    # A program to calculate the number between 2 (n1, n1) floats.
+    # A program to calculate the number between 2 (n1, n2) floats.
 print('This program will calculate the values between 2 float numbers, please enter the numbers below:')
 
     # Defining the numbers as float
