@@ -2,11 +2,16 @@
 
 # To code:
 - [ ] Tic tac toe game.
-- [ ] image to ASCII
-- [ ] calculators 1: CLI.
-- [ ] calculators 2: TUI
-- [ ] calculators 3: GUI.
-- [ ] fake sql (/ database).
+- [ ] Image to ASCII
+- [ ] Calculator 1: CLI.
+- [ ] Calculator 2: TUI.
+- [ ] Calculator 3: GUI.
+- [ ] Fake sql (/ database).
+- [ ] A static window.
+- [ ] A pong '72 based game.
+- [ ] Typing game.
+- [ ] Sudoku + solver.
+- [ ] Minimal websocket server
 
 # write down what I know in C: 
 - sources:
