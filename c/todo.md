@@ -11,7 +11,7 @@
 - [ ] A pong '72 based game.
 - [ ] Typing game.
 - [ ] Sudoku + solver.
-- [ ] Minimal websocket server
+- [ ] Minimal websocket server.
 
 # write down what I know in C: 
 - sources:
