@@ -8,10 +8,12 @@
 - [ ] Calculator 3: GUI.
 - [ ] Fake sql (/ database).
 - [ ] A static window.
-- [ ] A pong '72 based game.
+- [ ] A pong '72s based game 1: GUI.
 - [ ] Typing game.
 - [ ] Sudoku + solver.
 - [ ] Minimal websocket server.
+- [ ] A Snake '80s based game 1: TUI.
+- [ ] A Snake '80s based game 1: GUI.
 
 # write down what I know in C: 
 - sources:

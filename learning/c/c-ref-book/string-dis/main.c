@@ -16,7 +16,7 @@ int main(){
     string1 = "abcd"; string2 = "abcd";
 
     if (string1 == string2)
-        printf("The strings are the same and shared in memory adress!\n");
+        printf("The strings are the same and shared in memory adress!\n\b");
     else printf("The strings are not the same and not shared in memory adress!\n");
     
     string1[0] = '1';
