@@ -14,6 +14,7 @@
 - [ ] Minimal websocket server.
 - [ ] A Snake '80s based game 1: TUI.
 - [ ] A Snake '80s based game 1: GUI.
+- [ ] A Chat Server.
 
 # write down what I know in C: 
 - sources:
