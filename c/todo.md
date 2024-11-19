@@ -56,3 +56,4 @@
 - [ ] memory & adress concept.
 - [ ] pointers.
 - [ ] pointer FILE & functions.
+- [ ] data structures (LIFO) part 1: stacks
