@@ -15,6 +15,7 @@
 - [ ] A Snake '80s based game 1: TUI.
 - [ ] A Snake '80s based game 1: GUI.
 - [ ] A Chat Server.
+- [ ] A low level calculator (8-bit version)
 
 # write down what I know in C: 
 - sources:
